@@ -2,13 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta
-    name="description"
-    content="Lu Crochê - Artesanato feito à mão com carinho."
-  >
 
   <title>Lu Crochê | Artesanato</title>
 
@@ -19,93 +13,259 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #fff9f7;
-      color: #3d2925;
+      font-family: Arial, sans-serif;
+      background: #fff8fc;
+      color: #333;
     }
-
-    /* MENU */
 
     header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.96);
-      border-bottom: 1px solid #eadbd6;
+      background: linear-gradient(135deg, #d85ca8, #9b59b6);
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 17px;
     }
 
     nav {
-      max-width: 1100px;
-      margin: auto;
-      padding: 16px 20px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      font-size: 26px;
-      font-weight: bold;
-      color: #8d5048;
-    }
-
-    .logo span {
-      color: #d98f86;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 25px;
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     nav a {
+      color: #9b3f83;
       text-decoration: none;
-      color: #4d3934;
       font-weight: bold;
+      margin: 0 12px;
     }
-
-    nav a:hover {
-      color: #b76b61;
-    }
-
-    /* HERO */
 
     .hero {
-      max-width: 1100px;
-      margin: auto;
-      padding: 80px 20px;
-
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 45px;
+      text-align: center;
+      padding: 60px 20px;
+      background: #fce8f5;
     }
 
-    .hero h1 {
-      font-size: 58px;
-      line-height: 1.05;
-      color: #70423b;
-      margin-bottom: 20px;
+    .hero h2 {
+      font-size: 34px;
+      color: #8e3b78;
+      margin-bottom: 15px;
     }
 
     .hero p {
-      font-size: 19px;
+      font-size: 18px;
+      max-width: 650px;
+      margin: auto;
       line-height: 1.6;
-      color: #6f5b55;
-      margin-bottom: 25px;
     }
 
     .botao {
       display: inline-block;
-      background: #9b5b52;
+      margin-top: 25px;
+      background: #9b59b6;
       color: white;
+      padding: 14px 25px;
+      border-radius: 30px;
       text-decoration: none;
+      font-weight: bold;
+    }
 
-      padding: 15px 
+    .produtos {
+      padding: 45px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .produtos h2 {
+      text-align: center;
+      color: #8e3b78;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .foto {
+      height: 210px;
+      background: linear-gradient(135deg, #f3c1df, #d9b4e8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 70px;
+    }
+
+    .card h3 {
+      margin: 18px 10px 8px;
+      color: #8e3b78;
+    }
+
+    .card p {
+      padding: 0 15px;
+      line-height: 1.5;
+    }
+
+    .contato {
+      background: #fce8f5;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .contato h2 {
+      color: #8e3b78;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #8e3b78;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 29px;
+      }
+
+      .hero h2 {
+        font-size: 27px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🧶 Lu Crochê</h1>
+    <p>Artesanato feito com carinho</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <h2>Bem-vindo à Lu Crochê 💕</h2>
+
+    <p>
+      Peças de crochê feitas à mão, com carinho,
+      criatividade e dedicação.
+    </p>
+
+    <a class="botao" href="#produtos">
+      Ver produtos
+    </a>
+  </section>
+
+  <section class="produtos" id="produtos">
+
+    <h2>🧶 Nossos produtos</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="foto">🧸</div>
+
+        <h3>Amigurumis</h3>
+
+        <p>
+          Bonequinhos e personagens feitos
+          artesanalmente em crochê.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="foto">🌸</div>
+
+        <h3>Peças decorativas</h3>
+
+        <p>
+          Peças especiais para deixar sua casa
+          ainda mais bonita.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="foto">👜</div>
+
+        <h3>Bolsas</h3>
+
+        <p>
+          Bolsas artesanais feitas em crochê
+          para diferentes ocasiões.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="foto">🎀</div>
+
+        <h3>Encomendas</h3>
+
+        <p>
+          Faça sua encomenda personalizada
+          do jeito que você quiser.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="contato" id="contato">
+
+    <h2>📱 Faça sua encomenda</h2>
+
+    <p>
+      Entre em contato para conhecer nossas peças
+      e fazer seu pedido.
+    </p>
+
+    <a
+      class="botao"
+      href="https://wa.me/"
+      target="_blank">
+      Falar pelo WhatsApp
+    </a>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Lu Crochê</p>
+    <p>Artesanato feito com carinho 🧶💕</p>
+  </footer>
+
+</body>
+</html>
